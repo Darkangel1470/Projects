@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+	text-align: center;
+}
+hr {
+border: 10px solid lime;
+border-radius: 5px;
+width: 95%;
+}
+.mail {
+ height:20px;
+}
+body {
+    background-color: black;
+    color: lime;
+    background-image: url('https://media.istockphoto.com/photos/cement-floor-and-black-wall-backgrounds-empty-room-interior-use-for-picture-id1226232663?b=1&k=20&m=1226232663&s=170667a&w=0&h=US1L3FG47WZUOGhY_WiXCmJu0UkTv0MKPb8wOziwG4s=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+button {
+	height: 40px;
+	width: 130px;
+	background-color: lime;
+	border-radius: 18px;
+	margin: auto;	
+}
+.ldiv {
+	border: 2px solid lim;
+	width: 50%;
+	height: 200px;
+	float: left;
+}
+.rdiv {
+	border: 1px solid lim;
+	float: right;
+	width: 50%;
+	height: 300px;
+}
+h1 {
+	font-family: 'Brush Script MT', cursive;
+	text-size: 299px;
+}
+input {
+	border-radius: 15px;
+	maxlength: 80;
+}
+#search {
+	float: right;
+	value: "Gsearch";
+}
+ label.dob {
+	float:left;
+	width: 200px;
+}
+#dob, #tob, #age {
+	float:right;
+	width:170px;
+	height: 20px;
+	padding-left: 10px;
+}
+#tablu {
+	margin: auto;
+	font-size: 30px;
+}
+#uname, #pass {
+	height: 30px;
+	width: 250px;
+}
+#save, #sabel {
+	position: relative;
+	right: 70px;
+}
+</style>
+</head>
+<body>
+<div>
+	<input type="search" id="search" placeholder=" Gsearch">
+	<h1>Personal information page</h1>
+	<form>
+		<fieldset>
+			<legend>Personal Infermation Page</legend>
+			<div>
+			<h1 style="text-align: center">Your Information</h1>
+			<div class="ldiv">
+			<table>
+				<tr>
+					<td><label for="fname">Enter you first name</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="fname" name="fname" required autofocus size="15" autocomplete="off"></td>
+				</tr>
+				<tr>
+					<td><label for="lname">Enter your last name</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="lname" name="lname" required size="15" ></td>
+				</tr>
+				<tr>
+					<td><label for="mname">Enter your Middle name</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="mname" name='mname' disabled value="unnecessary"></td>
+				</tr>
+			</table>
+				<label for="tel">Enter your phone number</label><br>
+				<input type="tel" id="tel" name="tel">
+			</div>
+			<div class="rdiv">
+				<label for="mail">Enter your email</label><br>
+				<input type="email" id="mail" name="mail" class="mail"value="someone@example.com"><br><br>
+				<label for="country">Country code</label><br>
+				<input type="text" id="country" name="country" pattern="[A-Za-z]{3}"><br><br>
+				<label for="gender">Select your gender</label>
+				<select name="gender" id="gender" >
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+					<option value="Others" disabled>Others</option>
+				</select><br><br>
+				<label for="pwp">Submit your pic</label><br>
+				<input type+"image" id="pwp" name="pwp"><br><span>(passport size photo with pout*)</span>
+			</div>
+			<hr>
+		 <h1 style="text-align: center">DOB DETAILS</h1>
+		 <div>
+			<label class= "dob" for="dob">Select Your Date of Birth</label>
+			<input type="date" id="dob" name="dob"><br><br>
+			<label class= "dob" for="tob">Time of birth</label>
+			<input type="time" id="tob" name="tob"><br> <br>
+			<label for="age">Enter Your Age: </label>
+			<input type="number" id="age" name="age" min="18" max="500">
+			<br><br><br><br>
+			<hr>
+			<h1 style="text-align: center"> Login Information</h1>
+			<fieldset class="center">
+			<legend>Account detail</legend>
+			<div class="center"></div>
+			<table class="center" id="tablu">
+				<tr>
+					<td><label for="uname">Enter your username: </label></td>
+					</tr>
+				<tr>
+					<td><input id="uname" type="text"></td>
+				</tr><br>
+				<tr>
+					<td><label for="pass">Enter your password: </label></td>
+					</tr>
+				<tr>
+					<td><input id="pass" type="password"></td>
+				</tr>		
+			</table>
+			<input type="checkbox" id="save">
+			<label for="save" id="sabel">Save password</label></div>
+			<br>
+			</fieldset>
+		 </div>
+			</div>
+			<br><br>
+			<button type="submit" disabled>Apply for free</button>
+			<button type="submit">Apply for $5</button>
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>
